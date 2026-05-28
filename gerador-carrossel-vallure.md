@@ -327,7 +327,12 @@ Claude must automatically:
 
 ---
 
-Balance both modes naturally across multiple generations to avoid repetitive content.
+**Strictly alternate modes across generations.** Before choosing the mode, check the most recently created folder in `exports/` and pick the OPPOSITE type:
+- Last export was `light` → generate `premium`
+- Last export was `premium` → generate `light`
+- No exports yet → start with `light`
+
+Never generate two consecutive carousels of the same type.
 
 ---
 
